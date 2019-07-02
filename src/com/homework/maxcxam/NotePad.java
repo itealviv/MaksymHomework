@@ -3,7 +3,7 @@ package com.homework.maxcxam;
 import java.util.Scanner;
 
 public class NotePad {
-    private File[] file = new File[3];
+    private File[] files = new File[3];
 
     private NotePad(){
         getData();
@@ -25,14 +25,14 @@ public class NotePad {
     }
 
     private void getData() {
-        for(int i = 0; i < file.length; i++) {
+        for(int i = 0; i < files.length; i++) {
             System.out.printf("enter data for #%s file: %n", i+1);
-            file[i] = new File(new Scanner(System.in).nextLine(), i+1);
+            files[i] = new File(new Scanner(System.in).nextLine(), i+1);
         }
     }
 
     private File[] getFile() {
-        return file;
+        return files;
     }
 
     public static void main(String[] args) {

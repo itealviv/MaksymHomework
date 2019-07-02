@@ -70,7 +70,7 @@ public class Payment {
     private void calculateShoppingCart() {
         System.out.println("In your cart:");
         double total = 0;
-        for (int i = 1; i<= shoppingCart.size(); i++){
+        for (int i = 1; i<= shoppingCart.size(); i++) {
             System.out.printf("%s%n", shoppingCart.get(i));
             total += shoppingCart.get(i).getPrice();
         }
