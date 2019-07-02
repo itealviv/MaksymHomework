@@ -10,7 +10,7 @@ public class Account {
     private static int accountId = 1;
     private static int operationId = 1;
     private int user;
-    private static Map<Integer, Map<Integer, Operation>> accountOperations = new HashMap<>();
+    public static Map<Integer, Map<Integer, Operation>> accountOperations = new HashMap<>();
 
     Account() {
         startPlayWithAccount();
